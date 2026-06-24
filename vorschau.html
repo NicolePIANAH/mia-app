@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>MIA – Lokale Vorschau</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:wght@400;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+    html, body { font-family: 'Inter', -apple-system, sans-serif; background: #e8eef2; -webkit-font-smoothing: antialiased; }
+    #mia-root { max-width: 430px; margin: 0 auto; min-height: 100vh; background: #f7f9fb; }
+    #preview-banner { background: #1e3a6e; color: rgba(255,255,255,0.8); text-align: center; padding: 6px; font-size: 11px; font-family: 'Inter', sans-serif; letter-spacing: .5px; }
+    ::-webkit-scrollbar { width: 0; }
+  </style>
+</head>
+<body>
+  <div id="preview-banner">LOKALE VORSCHAU – kein Server nötig</div>
+  <div id="mia-root"></div>
+
+  <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+  <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+  <script charset="utf-8" src="mia-app.compiled.js"></script>
+</body>
+</html>
