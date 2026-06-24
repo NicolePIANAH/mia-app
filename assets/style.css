@@ -1,0 +1,45 @@
+/* MIA – Stylesheet | PIA Designsystem */
+:root {
+  --petrol:   #1a4d5c;
+  --navy:     #1e3a6e;
+  --blue:     #2e7da6;
+  --lightblue:#a8cdd9;
+  --greyblue: #6b8fa3;
+  --gold:     #c4a46b;
+  --white:    #f7f9fb;
+  --cream:    #deeaf0;
+  --sand:     #e8d5b0;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  background: var(--white);
+  color: var(--petrol);
+  -webkit-font-smoothing: antialiased;
+  overscroll-behavior: none;
+}
+
+#mia-root {
+  max-width: 430px;
+  margin: 0 auto;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Scrollbalken ausblenden */
+::-webkit-scrollbar { width: 0; }
+
+/* Focus-Outline für Barrierefreiheit */
+button:focus-visible, input:focus-visible {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+/* Druckstil für Therapeuten-Export */
+@media print {
+  .no-print { display: none !important; }
+  body { background: white; font-size: 14px; }
+  #mia-root { max-width: 100%; }
+}
